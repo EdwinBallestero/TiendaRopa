@@ -92,6 +92,10 @@ app.get('/api/contacto', (req, res) => {
   res.json({ total: consultas.length, consultas });
 });
 
+app.get('/descuentos', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'descuentos.html'));
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
