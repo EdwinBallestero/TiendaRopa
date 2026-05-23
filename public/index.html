@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moda Viva | Ropa con estilo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Moda<span>Viva</span></div>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#novedades">Novedades</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <div id="inicio" class="hero-content">
+      <div>
+        <p class="eyebrow">Venta de ropa moderna y accesible</p>
+        <h1>Estilo para cada momento del día.</h1>
+        <p class="hero-copy">Descubrí colecciones pensadas para looks casuales, profesionales y urbanos, con calidad y precios atractivos.</p>
+        <div class="hero-actions">
+          <a href="#productos" class="btn btn-primary">Ver productos</a>
+          <a href="#contacto" class="btn btn-secondary">Consultar</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p>🔥 Oferta de la semana</p>
+        <h2>Hasta 30% off</h2>
+        <ul>
+          <li>Prendas seleccionadas</li>
+          <li>Envío rápido</li>
+          <li>Atención personalizada</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="features">
+      <article>
+        <h3>Calidad</h3>
+        <p>Telas suaves, acabados cuidados y diseños en tendencia.</p>
+      </article>
+      <article>
+        <h3>Variedad</h3>
+        <p>Camisas, pantalones, sudaderas y abrigo ligero para todas las ocasiones.</p>
+      </article>
+      <article>
+        <h3>Atención</h3>
+        <p>Consultas rápidas, recomendaciones de talles y seguimiento de pedidos.</p>
+      </article>
+    </section>
+
+    <section id="productos" class="section">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Productos destacados</p>
+          <h2>Ropa para renovar tu guardarropa</h2>
+        </div>
+        <p>Listado generado desde el backend para probar la API local.</p>
+      </div>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <section id="novedades" class="section insights">
+      <div>
+        <p class="eyebrow">Novedades</p>
+        <h2>Soluciones para looks diarios</h2>
+        <p>Nos enfocamos en ofrecer una experiencia visual, clara y fácil de comprar, ideal para una página informativa con intención comercial.</p>
+      </div>
+      <div class="insight-boxes">
+        <article>
+          <h3>Estilos urbanos</h3>
+          <p>Combos modernos para ir cómodo y mantener una imagen fresca.</p>
+        </article>
+        <article>
+          <h3>Diseños versátiles</h3>
+          <p>Prendas que se adaptan al trabajo, la universidad y los momentos libres.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2>Dejanos tu consulta</h2>
+        <p>Podés enviar un mensaje y el backend lo registrará para simular una interacción real.</p>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <label>
+          Nombre
+          <input type="text" name="nombre" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Mensaje
+          <textarea name="mensaje" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Enviar consulta</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
